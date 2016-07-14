@@ -7,7 +7,8 @@ gem 'rails', '4.0.4'
 gem 'pg'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.2'
+#Turned off for lesson 5 see below using generic gem sass-rails
+#gem 'sass-rails', '~> 4.0.2'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -32,7 +33,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+#Added lesson 2-3 for heroku
 gem 'rails_12factor', group: :production
+
+#Added lesson 5 for twitter bootstrap
+gem 'bootstrap-sass', '~> 3.3.5.1'
+gem 'sprockets', '2.11.0'
+gem 'sass-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
