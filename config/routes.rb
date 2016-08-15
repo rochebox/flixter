@@ -1,4 +1,5 @@
 Flixter::Application.routes.draw do
+  devise_for :users
   #ADDED THIS ROUTE TO INDEX IN LESSON 4
   root 'static_pages#index'
   
