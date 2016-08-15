@@ -11,8 +11,19 @@
 /* close to hot pink #E55EA2 (229,94,162) */
 /* light grey #A99FA4 (169,159,164) */
 /* white with red-pink #E3D7DD (227,215,221) */
+/* dark grey color #E3D7DD (227,215,221) */
 
-/* no margins... */
+body {
+  background: url('bg1.png');
+  /* this is the chris coiyer font stack
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  /* am also using font squirrel fonts,.... */
+
+}
+
+
+
+
 h1, h2, h3, h4, h5, h6, .navbar {
 	margin: 0;
 }
@@ -80,6 +91,16 @@ h1, h2, h3, h4, h5, h6, .navbar {
   	font-size: 35pt;
 }
 
+.frosty-font {
+	font-family: 'archisticonormal', sans-serif;
+
+	text-shadow: rgba(229,94,162, 0.95) 1px 1px;
+  	font-size: 30pt;
+}
+
 .btn {
-  border-radius:0;
+ border-radius:0;
+ font-family: 'ritaglioregular', sans-serif;
+ font-size: 12pt;
+ box-shadow: 3px 3px 1px black;
 }
