@@ -103,4 +103,46 @@ h1, h2, h3, h4, h5, h6, .navbar {
  font-family: 'ritaglioregular', sans-serif;
  font-size: 12pt;
  box-shadow: 3px 3px 1px black;
+} 
+
+/* for device and logins... */
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding:10px;
+
+  margin-top: 1%;
+  padding-left: 100px;
+}
+
+.booyah-box h2, .booyah-box h1 {
+  margin:15px;
+}
+
+.booyah-box h2{
+	font-family: 'archisticonormal', sans-serif;
+ 	font-size: 42pt;
+}
+
+.booyah-session-info{
+	font-family: 'ritaglioregular', sans-serif;
+ 	font-size: 14pt;
+}
+
+.booyah-session-info-small{
+	font-family: 'ritaglioregular', sans-serif;
+ 	font-size: 10pt;
+}
+
+.booyah-session-input{
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+ 	font-size: 12pt;
+}
+
+.booyah-long-field{
+	length: 500px;
 }
