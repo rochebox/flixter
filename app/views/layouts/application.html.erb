@@ -20,12 +20,15 @@
                 <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand" href="#">Flixter!</a>
+              <!-- %=link_to 'Flixter!', root_url, class="navbar-brand" %-->
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li><a href="#">See all Courses</a></li>
+                <li>
+                  <%= link_to 'See all Courses', courses_path %>
+                </li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <% if user_signed_in? %>

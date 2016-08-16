@@ -3,7 +3,7 @@ Flixter::Application.routes.draw do
 
   #ADDED THIS ROUTE TO INDEX IN LESSON 4
   root 'static_pages#index'
-
+  resources :courses, only: [:index, :show]
   namespace :instructor do
     resources :courses, only: [:new, :create, :show]
   end
