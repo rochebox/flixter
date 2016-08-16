@@ -12,11 +12,15 @@
 /* light grey #A99FA4 (169,159,164) */
 /* white with red-pink #E3D7DD (227,215,221) */
 /* dark grey color #E3D7DD (227,215,221) */
+/* Dark Slate Blue -- DarkSlateBlue 	#483D8B */
+/* Slate Blue -- SlateBlue 	#6A5ACD */
 
 body {
   background: url('bg1.png');
-  /* this is the chris coiyer font stack
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  /* this is the chris coiyer font stack https://css-tricks.com/snippets/css/font-stacks/ */
+  /* Helvetica/Arial-based sans serif stack */
+font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   /* am also using font squirrel fonts,.... */
 
 }
@@ -123,6 +127,11 @@ h1, h2, h3, h4, h5, h6, .navbar {
   margin:15px;
 }
 
+.booyah-box h1{
+	font-family: 'archisticonormal', sans-serif;
+ 	font-size: 48pt;
+}
+
 .booyah-box h2{
 	font-family: 'archisticonormal', sans-serif;
  	font-size: 42pt;
@@ -139,8 +148,12 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .booyah-session-input{
-	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
- 	font-size: 12pt;
+	/* Helvetica/Arial-based sans serif stack */
+	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+ 	font-size: 14pt;
+ 	font-weight: bold;
+ 	color: #6A5ACD;
 }
 
 .booyah-long-field{
@@ -149,4 +162,14 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .clr {
   clear:both;
+}
+
+.field_with_errors {
+  font-family: 'ritaglioregular', sans-serif;
+  font-size: 14pt;
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding:8px;
+  margin:10px;
 }

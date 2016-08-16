@@ -1,7 +1,12 @@
 Flixter::Application.routes.draw do
   devise_for :users
+
   #ADDED THIS ROUTE TO INDEX IN LESSON 4
   root 'static_pages#index'
+
+  namespace :instructor do
+    resources :courses, only: [:new, :create, :show]
+  end
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
