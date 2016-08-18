@@ -29,3 +29,11 @@
   </ul>
 
 </div>
+<!-- this is currently outside of the booyah box -->
+<div>
+  <br class="clr" />
+  <%= simple_form_for @image, url: instructor_course_images_path(current_course) do |f| %>
+  <%= f.input :caption %>
+  <%= f.submit "Add a Course Image", class: 'btn btn-primary' %>
+<% end %>
+</div>

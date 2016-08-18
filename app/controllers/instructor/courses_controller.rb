@@ -16,6 +16,8 @@ class Instructor::CoursesController < ApplicationController
 	end
 
 	def show
+		#didnt put this in the student one yet
+		@image = Image.new
 	end
 
 	private
