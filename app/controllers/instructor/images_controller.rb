@@ -3,7 +3,7 @@ class Instructor::ImagesController < ApplicationController
 	def create
 		@user = current_user
 		@course = Course.find(params[:course_id])
-		#this line is from nomster lesson 10 you can omit the merge maybe
+		#this line is from nomster lesson 10 with out the merge and it didnt work
 		#@course.images.create(image_params)
 
 		# trying something from http://stackoverflow.com/questions/3839779/rails-create-on-has-one-association
@@ -15,6 +15,6 @@ class Instructor::ImagesController < ApplicationController
 
 	private
 	def image_params
-		params.require(:image).permit(:caption)
+		params.require(:image).permit(:caption, :imageupload)
 	end
 end

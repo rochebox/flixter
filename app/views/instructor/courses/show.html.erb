@@ -28,11 +28,32 @@
     <% end %>
   </ul>
 
+  <div>
+    <% if current_course.image == nil %>
+      <div class="col-xs-4 "> 
+        You don't have a course banner yet! 
+      </div>
+
+    <% else %>
+      
+      <div class="col-xs-4 ">
+        <p>This is your course banner </p>
+        <%= image_tag current_course.image.imageupload, :class => "booyah-show-image" %>
+        <%= current_course.image.caption %>
+      </div>
+
+    <% end %>
+  </div>
 </div>
-<!-- this is currently outside of the booyah box -->
+
+
+
+
+<!-- this is the form which is currently outside of the booyah box -->
 <div>
   <br class="clr" />
   <%= simple_form_for @image, url: instructor_course_images_path(current_course) do |f| %>
+  <%= f.input :imageupload %>
   <%= f.input :caption %>
   <%= f.submit "Add a Course Image", class: 'btn btn-primary' %>
 <% end %>
