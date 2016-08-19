@@ -24,14 +24,11 @@ gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
+#turned off to make it when Lesson 21 problem happened
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
 
 #Added lesson 2-3 for heroku
 gem 'rails_12factor', group: :production
@@ -45,7 +42,13 @@ gem 'devise', '>= 3.2.4'
 gem 'simple_form'
 gem 'carrierwave', '0.11.0'
 gem "figaro", ">= 1.0.0"
+gem "mini_magick"
 gem "fog"
+
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
