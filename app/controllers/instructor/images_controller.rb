@@ -9,7 +9,7 @@ class Instructor::ImagesController < ApplicationController
 		# trying something from http://stackoverflow.com/questions/3839779/rails-create-on-has-one-association
 		@image = Image.create(image_params)
 		@course.image = @image
-		# @user.images = @image  not sure what to do with the user who is "has many"
+		
 		redirect_to instructor_course_path(@course)
 	end
 
