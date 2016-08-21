@@ -1,7 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* paleTurquoise --- #afeeee */
+/* paleTurquoise --- #afeeee   flixter logo*/
+/* slightly darker #96e9e9  */
+/* color: #66c2ff;  flixter heading color */
 /* coral -- #FF7F50 */
 /* dark red crimson #FF0000 */
 /* dark orange -- #FF8C00  */
@@ -9,11 +11,19 @@
 /* floral white #FFFAF0 */
 /* hot pink  #FF69B4 */
 /* close to hot pink #E55EA2 (229,94,162) */
+/* softer pink for headings ##ffb3d9 */
 /* light grey #A99FA4 (169,159,164) */
 /* white with red-pink #E3D7DD (227,215,221) */
 /* dark grey color #E3D7DD (227,215,221) */
+/* steel blue-grey used on buttons #337ab7 rgb 51 122 183 */
 /* Dark Slate Blue -- DarkSlateBlue 	#483D8B */
 /* Slate Blue -- SlateBlue 	#6A5ACD */
+
+/* fonts we are using from squirrel font */
+/* font-family: 'spilt_inkregular', sans-serif !important; */
+/* font-family: 'ritaglioregular', sans-serif; */
+/* */
+
 
 body {
   background: url('bg1.png');
@@ -66,6 +76,8 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	text-shadow: 2px 2px 3px #FF00FF;
 	
 }
+
+
 
 .hero {
 	background: url('hero1.jpg') no-repeat center center fixed;
@@ -152,6 +164,10 @@ h1, h2, h3, h4, h5, h6, .navbar {
  	font-size: 42pt;
 }
 
+.booyah-box h2 a:hover{
+  text-decoration: none !important;	
+}
+
 .booyah-session-info{
 	font-family: 'ritaglioregular', sans-serif;
  	font-size: 14pt;
@@ -175,6 +191,17 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	length: 500px;
 }
 
+h1.flixter-menu-heading-font{
+	/* font-family: 'spilt_inkregular', sans-serif !important; */
+	font-family: 'ritaglioregular', sans-serif;
+	font-size: 57px;
+	/* color: #afeeee;  */
+	color: #66c2ff;  /* flixter heading color */
+	text-shadow: 2px 2px 3px #ff80bf; /* softer pink */
+	/* Dark Slate Blue -- DarkSlateBlue 	#483D8B */
+	/* Slate Blue -- SlateBlue 	#6A5ACD */
+}
+
 .clr {
   clear:both;
 }
@@ -188,3 +215,75 @@ h1, h2, h3, h4, h5, h6, .navbar {
   padding:8px;
   margin:10px;
 }
+
+/* course  index page styling */
+.course-index-page-title-pic-unit, 
+.course-index-page-description-button-unit{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+
+}
+
+
+
+booyah-show-course-title-index a:link {
+    text-decoration: none;
+}
+
+booyah-show-course-title-index a:visited {
+    text-decoration: none;
+}
+
+booyah-show-course-title-index a:hover {
+    text-decoration: none;
+}
+
+booyah-show-course-title-index a:active {
+    text-decoration: none;
+}
+
+/* course detail page styles*/
+.course-show-heading{
+	color: #337ab7;
+}
+
+.course-show-syllabus-heading{
+	font-family: 'archisticonormal', sans-serif;
+	/* color: #337ab7; */
+	/* color: #96e9e9; */
+	color: #66c2ff;  /* flixter heading color */
+	/* text-shadow: rgba(229,94,162, 0.95) 2px 2px; */
+	/* Dark Slate Blue -- DarkSlateBlue 	#483D8B */
+	text-shadow: #483D8B 1px 1px;
+  	font-size: 24pt;
+}
+
+.course-inspirational-msg{
+	font-family: 'ritaglioregular', sans-serif;
+	font-size: 24px;
+	width: 800;
+	padding-top: 12px;
+	padding-right: 98px;
+	color: #66c2ff;  /* flixter heading color */
+	text-shadow: 1px 1px 2px #ff80bf; /* softer pink */
+}
+
+.course-show-right-pad{
+	padding-right: 98px;
+}
+
+.course-section-styling{
+    font-size: 17px;
+    font-weight: bold;
+	
+}
+
+.course-lesson-styling{
+	font-weight: normal;
+	font-weight: 80;
+	font-size: 14px;
+}
+	
+
+
+

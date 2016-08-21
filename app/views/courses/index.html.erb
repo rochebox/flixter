@@ -2,30 +2,33 @@
 
 <div class="booyah-box col-xs-10 col-xs-offset-1">
 
-  <h1 class="text-center">Learn something amazing today!</h1>
+  <h1 class="text-left flixter-menu-heading-font">Learn something amazing today!</h1>
   <hr />
 
   <!-- Listout Course information for all of the courses -->
   <% @courses.each do |course| %>
-    <br />
+          <div class="col-sm-8 col-xs-12">
+            	<h2 class="text-left booyah-show-course-title-index"> 
+            		<%= link_to course.title, course_path(course)%>
+            	</h2>
+          </div>
+          <div class="col-sm-4 col-xs-12 text-right">
+              <% if course.image != nil %>
+                <%= image_tag course.image.imageupload, :class => "booyah-show-image" %>
+              <% end %>
+          </div>
 
-    <div class="col-sm-8 col-xs-12">
-  	<h2 class="text-left"> 
-  		<%= link_to course.title, course_path(course) %>
-  	</h2>
-    </div>
-    <div class="col-sm-4 col-xs-12 text-right">
-      <% if course.image != nil %>
-        <%= image_tag course.image.imageupload, :class => "booyah-show-image" %>
-        <% end %>
-    </div>
     <br class="clr" />
-  	<div class="col-sm-8 col-xs-12">
-  		<%= course.description %>
-  	</div>
-  	<div class="col-sm-4 col-xs-12 text-center">
-  		<%= link_to 'Get More Details!', course_path(course), class: 'btn btn-primary btn-large' %>
-  	</div>
+    <br />
+    <div class="course-index-page-description-button-unit">
+          	<div class="col-sm-8 col-xs-12">
+          		<%= course.description %>
+          	</div>
+          	<div class="col-sm-4 col-xs-12 text-center">
+          		<%= link_to 'Get More Details!', course_path(course), class: 'btn btn-primary btn-large' %>
+          	</div>
+    </div>
   	<br class="clr" />
+    <hr />
   <% end %>
 </div>

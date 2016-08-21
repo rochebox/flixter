@@ -5,6 +5,8 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link href="http://vjs.zencdn.net/5.0.2/video-js.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/5.0.2/video.js"></script>
 </head>
 <body>
   <div id="wrap">
@@ -58,9 +60,13 @@
   <br class="clr" />
   <div id="footer">
           <div class="container">
-            <b>Teachers</b>
-            <br />
-            <%= link_to 'Teach a Course', new_instructor_course_path %>
+            <div class="col-sm-4">
+              <h4 class="footer-heading text-center">Teachers <span class="glyphicon glyphicon-education" </span></h4>
+             
+              <ul class="footer-ul">
+              <li class="footer-listing"> <%= link_to 'Teach a Course', new_instructor_course_path, :class => "footer-link" %> </li>
+            </ul>
+           </div>
           </div>
   </div>
 
