@@ -7,11 +7,19 @@
         </h1>
         <br />
         <div class="booyah-show-image">
-            <% if @course.image != nil %>
-            <%= image_tag @course.image.imageupload, :class => "booyah-show-image" %>
+            <!-- show the course image or a default -->
+             <!-- show course image or a default -->
+                  <% if @course.image2? %>
  
-            
-            <% end %>
+                      <%= image_tag @course.image2, :class => "booyah-show-image" %>
+                  <% else %>      
+                      <div class="flixter-defaut-course-image text-center">
+                        <div class="inside-flixter"> Flixter </div>
+                        <div class="inside-f">F</div>
+                      </div>                  
+               <% end %>
+
+
         </div>
   
 
@@ -28,7 +36,8 @@
 
       </div>
       <div class="col-sm-8 col-xs-12">
-                  <p class="text-left course-inspirational-msg"> <%=@course.image.caption %> </p>
+
+                  <br />
 
                   <div class="text-left course-show-right-pad">
                       <%= @course.description %>

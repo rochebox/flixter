@@ -2,6 +2,7 @@ class Course < ActiveRecord::Base
   belongs_to :user
   has_many :sections
   has_one :image
+  mount_uploader :image2, Image2Uploader
 
   validates :title, presence: true
   validates :description, presence: true

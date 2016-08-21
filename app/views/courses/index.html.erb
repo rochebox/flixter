@@ -13,9 +13,16 @@
             	</h2>
           </div>
           <div class="col-sm-4 col-xs-12 text-right">
-              <% if course.image != nil %>
-                <%= image_tag course.image.imageupload, :class => "booyah-show-image" %>
-              <% end %>
+              <!-- show course image or a default -->
+                  <% if course.image2? %>
+ 
+                      <%= image_tag course.image2, :class => "booyah-show-image" %>
+                  <% else %>      
+                      <div class="flixter-defaut-course-image text-center">
+                        <div class="inside-flixter"> Flixter </div>
+                        <div class="inside-f">F</div>
+                      </div>                  
+               <% end %>
           </div>
 
     <br class="clr" />
