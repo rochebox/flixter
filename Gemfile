@@ -30,7 +30,6 @@ gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-
 #Added lesson 2-3 for heroku
 gem 'rails_12factor', group: :production
 
@@ -46,6 +45,8 @@ gem "figaro", ">= 1.0.0"
 gem 'mini_magick', '~> 4.3.1'
 gem "fog"
 gem 'carrierwave-aws'
+gem 'stripe'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
