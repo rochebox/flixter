@@ -39,6 +39,24 @@ font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill
 font-family: 'ritaglioregular';
 }
 
+.flixter-font{
+	font-family: 'spilt_inkregular', sans-serif 
+}
+.heading-font{
+	font-family: 'archisticonormal', sans-serif;
+}
+.heading-show-page{
+	font-size: 15pt;
+	margin: 0;
+	padding: 0;
+}
+
+.no-decoration:hover{
+	text-decoration:none;
+}
+.subtitle-show-page{
+	color: #E3D7DD;
+}
 
 
 
@@ -239,10 +257,12 @@ h1.flixter-menu-heading-font{
 	height: 130px;
 }
 
-.lesson a {
+.lesson-text{
   color:white;
-  font-family: "Helvetica Neue",Helvetica;
   font-weight:100;
+  font-size: 17px;
+  padding-right:10px;
+  padding-left:10px;
 }
 
 .section {

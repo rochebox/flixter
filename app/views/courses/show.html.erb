@@ -67,22 +67,25 @@
        </h3>
 
         <% count +=1 %>
-        <ul>
+        
         <% section.lessons.each do |lesson| %>
         <div class="col-xs-12 col-sm-6">
-          <div class="lesson text_center course-lesson-styling">
+          <div class="lesson text-center course-lesson-styling">
             <br />
-            <li>
-            <%= link_to lesson_path(lesson) do %>
-              <b><%= lesson.title %></b>
+             
+            <%= link_to lesson_path(lesson) , class: 'heading-font heading-show-page no-decoration'  do %> 
+                <%= lesson.title %>
+                <% end %>
               <br />
+              <%= link_to lesson_path(lesson) , class: 'lesson-text no-decoration'  do %> 
+              
               <%= lesson.subtitle %>
-            <% end %>  
-          </li>
+             <% end %>  
+          
           </div>
         </div>
         <% end %>
-      </ul>
+      
       <br class="clr" />
       </div>
     <% end %>
