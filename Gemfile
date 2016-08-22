@@ -23,7 +23,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+# turned off in Lesson 24 to help solve a refresh problem with video embedding.
+# gem 'turbolinks'
 #turned off to make it when Lesson 21 problem happened
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
