@@ -46,6 +46,7 @@ gem 'mini_magick', '~> 4.3.1'
 gem "fog"
 gem 'carrierwave-aws'
 gem 'stripe'
+gem 'ranked-model'
 
 
 group :doc do
