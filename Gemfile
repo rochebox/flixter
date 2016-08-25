@@ -47,6 +47,7 @@ gem "fog"
 gem 'carrierwave-aws'
 gem 'stripe'
 gem 'ranked-model'
+gem 'jquery-ui-rails'
 
 
 group :doc do
