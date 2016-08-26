@@ -256,12 +256,23 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .booyah-box h3{
 	font-family: 'archisticonormal', sans-serif;
  	font-size: 36pt;
- 	color: #337ab7;  /* flixter heading color */ 
+ 	color: #337ab7;  /* flixter heading  course listing color */ 
  	/* dark grey color #E3D7DD (227,215,221) */
 	/* steel blue-grey used on buttons #337ab7 rgb 51 122 183 */
 	/* Dark Slate Blue -- DarkSlateBlue 	#483D8B */
 	/* Slate Blue -- SlateBlue 	#6A5ACD */
 }
+
+.flixter-heading-blue{
+	font-family: 'archisticonormal', sans-serif;
+ 	font-size: 42pt;
+ 	color: #337ab7;  /* flixter heading  course listing color */ 
+ 	/* dark grey color #E3D7DD (227,215,221) */
+	/* steel blue-grey used on buttons #337ab7 rgb 51 122 183 */
+	/* Dark Slate Blue -- DarkSlateBlue 	#483D8B */
+	/* Slate Blue -- SlateBlue 	#6A5ACD */
+}
+
 
 .booyah-box h2 a:hover{
   text-decoration: none !important;	

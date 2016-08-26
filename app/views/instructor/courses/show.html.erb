@@ -19,11 +19,10 @@
             url: ui.item.data('update-url'),
             dataType: 'json',
             data: { section: { row_order_position: ui.item.index() } }
-        });
-            
-            
-          }
+        });    
+      }
      });
+
   });
 </script>
 <br />
@@ -34,7 +33,10 @@
   <br class="clr" />
   
   <div class="text-center">
-    <%= link_to 'Add a new section...', new_instructor_course_section_path(current_course), class: 'btn btn-primary btn-lg' %>
+    <!-- Button trigger modal -->
+        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newSectionModal">
+        Add a new section...
+        </button>
   </div>
 
   <ul class = "sections">
@@ -74,6 +76,8 @@
     <% end %>
   </ul>
 
+
+
   <!-- show course image  div now with Image 2 -->
   <div>
 
@@ -104,6 +108,28 @@
       </div>
 
   </div>  <!-- end the show course image div -->
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="newSectionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title flixter-heading-blue" id="newSectionModalLabel">Add a new Section</h4>
+      </div>
+      <%= simple_form_for @section, url: instructor_course_sections_path(current_course) do |f| %>
+      <div class="modal-body">
+              <%= f.input :title %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <%= f.submit "Add a section", class: 'btn btn-primary' %>
+      </div>
+      <% end %>
+    </div>
+  </div>
 </div>
 
 
