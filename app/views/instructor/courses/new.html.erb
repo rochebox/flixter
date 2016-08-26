@@ -4,11 +4,11 @@
   <div class="booyah-session-info">
       <%= simple_form_for @course, url: instructor_courses_path do |f| %>
         
-        <%= f.input :title , input_html: { class: "booyah-session-input" } %>
-        <%= f.input :description , input_html: { class: "booyah-session-input" } %>
-        <%= f.input :cost , input_html: { class: "booyah-session-input" } %>
+        <%= f.input :title, input_html: { class: "booyah-session-input" } %>
+        <%= f.input :description, input_html: { class: "booyah-session-input" } %>
+        <%= f.input :cost, input_html: { class: "booyah-session-input" } %>
 
-        <%= f.input :image2 %>
+        <%= f.input :image2, input_html: { class: "booyah-session-input" } %>
         <br />
         <%= f.submit "Create", class: 'btn btn-primary' %>
      

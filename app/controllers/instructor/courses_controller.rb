@@ -19,6 +19,7 @@ class Instructor::CoursesController < ApplicationController
 		#didnt put this in the student one yet
 		#@image = Image.new
 		@section = Section.new
+		@lesson = Lesson.new
 	end
 
 	private
