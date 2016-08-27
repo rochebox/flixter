@@ -63,13 +63,91 @@
   <br class="clr" />
   <div id="footer">
           <div class="container">
-            <div class="col-sm-4">
+            <div class="col-xs-12 col-sm-3">
               <h4 class="footer-heading text-center">Teachers <span class="glyphicon glyphicon-education" </span></h4>
              
               <ul class="footer-ul">
-              <li class="footer-listing"> <%= link_to 'Teach a Course', new_instructor_course_path, :class => "footer-link" %> </li>
+              <li class="footer-listing"> 
+                <%= link_to 'Teach a Course', new_instructor_course_path, :class => "footer-link" %> 
+              </li>   
+              <li class="footer-listing">
+                <%= link_to 'My Dashboard', dashboard_path %>
+              </li>
+
             </ul>
            </div>
+
+          <div class="col-xs-12 col-sm-3">
+           
+            <h4 class="footer-heading text-center">
+              About  
+              <span class="glyphicon glyphicon-globe"></span>
+            </h4>
+
+            <ul class="footer-ul">
+           
+             <li class="footer-listing">
+              <%= link_to 'Team', '#' %></li>
+            
+             <li class="footer-listing">
+              <%= link_to 'Careers', '#' %></li>
+            
+             <li class="footer-listing">
+              <%= link_to 'Privacy Policy', '#' %></li>
+
+            </ul>
+          </div>
+
+
+          <div class="col-xs-12 col-sm-3">
+            <h4 class="footer-heading text-center">Contact
+              <span class="glyphicon glyphicon-envelope"></span>
+            </h4>
+
+             <ul class="footer-ul">
+              <li class="footer-listing">
+                rochebox@gmail.com
+                <br />
+                c/o St. Mark's School
+                <br />
+                25 Marlboro Road
+                <br />
+                Southborough MA, 01772
+              </li>
+             </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-3">
+            <h4 class="footer-heading text-center">
+              Social
+              <span class="glyphicon glyphicon-sunglasses"></span>
+
+            </h4>
+             <ul class="footer-ul2 text-center">
+
+              <li  class="footer-listing footer-social text-center">
+                 <%= link_to 'http://github.com/rochebox' do %>
+                  <%= image_tag '/assets/github.png', class: 'social-button' %>
+                <% end %>
+              </li>
+             
+              <li  class="footer-listing footer-social text-center">
+                <%= link_to 'https://www.facebook.com/christopher.c.roche' do %>
+                <%= image_tag '/assets/facebook.png', class: 'social-button' %>
+                <% end %>
+              </li>
+             
+              <li  class="footer-listing footer-social text-center">
+                <%= link_to 'https://twitter.com/rochebox' do %>
+                <%= image_tag '/assets/twitter.png', class: 'social-button' %>
+                <% end %>
+              </li>
+              
+             </ul>
+
+          </div>
+
+
           </div>
   </div>
 
