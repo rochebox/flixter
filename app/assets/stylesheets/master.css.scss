@@ -263,10 +263,15 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	/* Slate Blue -- SlateBlue 	#6A5ACD */
 }
 
+.heading-color{
+	color: #337ab7;  /* flixter heading  course listing color */ 
+}
+
 .flixter-heading-blue{
 	font-family: 'archisticonormal', sans-serif;
  	font-size: 42pt;
- 	color: #337ab7;  /* flixter heading  course listing color */ 
+ 	color: #337ab7; /* flixter heading  course listing color */ 
+ 
  	/* dark grey color #E3D7DD (227,215,221) */
 	/* steel blue-grey used on buttons #337ab7 rgb 51 122 183 */
 	/* Dark Slate Blue -- DarkSlateBlue 	#483D8B */
@@ -304,12 +309,41 @@ h1, h2, h3, h4, h5, h6, .navbar {
 h1.flixter-menu-heading-font{
 	/* font-family: 'spilt_inkregular', sans-serif !important; */
 	font-family: 'ritaglioregular', sans-serif;
-	font-size: 57px;
+	font-size: 48px;
 	/* color: #afeeee;  */
-	color: #66c2ff;  /* flixter heading color */
+	/* color: #66c2ff;  flixter heading color */
+	/* color: #ff8c00;   dark orange -- */
+	/* light coral FFA07A */
+	color: #ffa07a;
+ 	/* Indian red CD5C5C */
+	/* fuchsia -- FF00FF */
+	/* floral white #FFFAF0 */
 	text-shadow: 2px 2px 3px #ff80bf; /* softer pink */
 	/* Dark Slate Blue -- DarkSlateBlue 	#483D8B */
 	/* Slate Blue -- SlateBlue 	#6A5ACD */
+}
+
+.push-right-menu-heading{
+	padding-left: 30px;
+}
+
+.push-right-dashboard-heading{
+	padding-right: 70px;
+}
+
+.push-down-dashboard{
+	margin-bottom: 14px;
+}
+
+.push-up-dashboard{
+	margin-top: 14px;
+}
+
+.dashboard-description{
+	/* Dark Slate Blue -- DarkSlateBlue 	#483D8B */
+	color: black;
+	font-size: 12pt;
+	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .clr {
@@ -414,6 +448,28 @@ booyah-show-course-title-index a:active {
 	font-weight: 80;
 	font-size: 14px;
 }
+
+.has-list-style{
+	list-style-type: circle;
+	margin-bottom: 20px;
+}
+
+.privacy-ul{
+	margin-right: 5%;
+	margin-bottom: 20px;
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+.privacy-ul li{
+	margin-bottom: 15px;
+
+}
+
+.career-snack-img{
+	width: 375px;
+}
+
 	
 
 
